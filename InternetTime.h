@@ -2,7 +2,8 @@
 #define INTERNET_TIME_H
 
 #include "SoftwareSerial.h"
-#include "esp32/esp32.h"
+#include "esp32.h"
+
 class InternetTime {
     private: 
         Esp32::Http http;
@@ -22,7 +23,7 @@ class InternetTime {
         int getHour();
         int getMinute();
         int getSecond();
-}
+};
 
 
 #endif
